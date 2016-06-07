@@ -4,10 +4,15 @@
 		<title>Eric Tran</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
 	</head>
 	<body>
 
@@ -22,7 +27,7 @@
 						<ul>
 							<li><a href="#intro">Intro</a></li>
 							<li><a href="#one">About Me</a></li>
-							<li><a href="#work">Porfolio</a></li>
+							<li><a href="#work">Portfolio</a></li>
 							<li><a href="#two">Technology</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
@@ -49,9 +54,9 @@
 					<header>
 						<h2>About Me</h2>
 					</header>
-					<p>My passion for web development began when I was working as an account manager at a digital media marketing agency. I helped clients with creating targeted advertisements and leads that closely matched their goals.</p>
+					<p>My passion for web development began when I was working as an account manager at a digital media marketing agency. I helped clients create targeted advertisements and leads that closely matched their goals.</p>
 					<p>While collaborating with our resident web developer, I admired the work he produced for our clients' websites and quickly became interested in web development.</p>
-					<p>Since spending 1000+ hours over 14 weeks dedicated to learning how to code at Coding Dojo, my days have been spent learning new technologies such as ReactJS. I am ready to join a company and expand my professional experience in web development.</p>
+					<p>Since spending over 1000 hours in 14 weeks dedicated to learning how to code at Coding Dojo, my days have been spent learning new technologies such as ReactJS. I am ready to join a company and expand my professional experience in web development.</p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -63,22 +68,259 @@
 						<h2>Portfolio</h2>
 						<p>Check out my most recent work. Feel free to browse and interact with the apps. For the source code, check out my <a href="https://github.com/Eric-Tran">GitHub.</a></p>
 					</header>
+					<!-- Button trigger modal -->
 
-					<!-- Lightbox Gallery  -->
-						<div class="container 75% gallery">
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/02.jpg" title="Radio Find &nbsp <a class='button-sm' href='http://ec2-54-201-107-195.us-west-2.compute.amazonaws.com'>Visit</a> &nbsp <a href='https://github.com/Eric-Tran/radiofind' class='icon fa-github'></a>" alt=""/></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/01.jpg" title="The Great Discussion Board &nbsp <a class='button-sm' href='http://ec2-54-191-236-193.us-west-2.compute.amazonaws.com'>Visit</a> &nbsp <a href='https://github.com/Eric-Tran/radiofind' class='icon fa-github'></a>" alt="" /></a></div>
+					<!-- Portfolio Section -->
+					<div class="container 75% gallery">
+						<div class="row 0% images">
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal1"><img src="images/thumbs/01.png" class="image fit from-left" /></a>
 							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="MEAN HDTV Store &nbsp <a class='button-sm' href='http://ec2-54-187-173-167.us-west-2.compute.amazonaws.com'>Visit</a> &nbsp <a href='https://github.com/Eric-Tran/radiofind' class='icon fa-github'></a>" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Ball Travellers &nbsp <a href='https://github.com/jnguyen10/ball_traveller' class='icon fa-github'></a>" alt="" /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="Impossible Asteroids &nbsp <a href='https://github.com/Eric-Tran' class='icon fa-github'></a>" alt="" /></a></div>
-								<div class="6u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Speaking Notes &nbsp <a href='https://github.com/Eric-Tran/Speaking-Notes' class='icon fa-github'></a>" alt="" /></a></div>
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal2"><img src="images/thumbs/02.png" class="image fit from-right" /></a>
 							</div>
 						</div>
+						<div class="row 0% images">
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal3"><img src="images/thumbs/03.png" class="image fit from-left" /></a>
+							</div>
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal4"><img src="images/thumbs/04.png" class="image fit from-right" /></a>
+							</div>
+						</div>
+						<div class="row 0% images">
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal5"><img src="images/thumbs/05.png" class="image fit from-left" /></a>
+							</div>
+							<div class="6u 12u(mobile)">
+								<a href data-toggle="modal" data-target="#Modal6"><img src="images/thumbs/06.png" class="image fit from-right" /></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Portfolio Modals -->
+					<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">Food Time</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>Food Time</strong> is an application built with ReactJS exploring additional possible features of Yelp using the Yelp API, including allowing a user to add wait times to their favorite restaurants and also helping you decide on what to eat.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>ReactJS |</li>
+											<li>React Redux |</li>
+											<li>Webpack |</li>
+											<li>Babel |</li>
+											<li>NodeJS |</li>
+											<li>ExpressJS |</li>
+											<li>MongoDB |</li>
+											<li>PassportJS |</li>
+											<li>Twitter Bootstrap |</li>
+											<li>Yelp Businesses API |</li>
+											<li>Google Maps API</li>
+										</ul>
+										<a href="http://reactfoodtime.herokuapp.com" target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img src="images/thumbs/foodtime/foodtime1.png" />
+													<img src="images/thumbs/foodtime/foodtime2.png" />
+													<img src="images/thumbs/foodtime/foodtime3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+			      					<a class='button-sm' target="blank" href='http://reactfoodtime.herokuapp.com'>Visit</a>&nbsp
+										<a href='https://github.com/Eric-Tran/React-Food-Time' target="blank" class='icon fa-github'></a>&nbsp
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
+					<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">RadioFind</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>RadioFind</strong> is a crowdsourced application that allows a user to search for local radio stations in the area. Features include search by location and genre, comment on a radio station, add radio stations, favorite/unfavorite a radio station, and edit radio station information.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>MongoDB |</li>
+											<li>ExpressJS |</li>
+											<li>AngularJS |</li>
+											<li>NodeJS |</li>
+											<li>PassportJS |</li>
+											<li>Twitter Bootstrap</li>
+										</ul>
+										<a href=http://ec2-54-201-107-195.us-west-2.compute.amazonaws.com target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img src="images/thumbs/radiofind/radiofind1.png" />
+													<img src="images/thumbs/radiofind/radiofind2.png" />
+													<img src="images/thumbs/radiofind/radiofind3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+			      					<a class='button-sm' target="blank" href='http://ec2-54-201-107-195.us-west-2.compute.amazonaws.com'>Visit</a>&nbsp
+										<a href='https://github.com/Eric-Tran/radiofind' target="blank" class='icon fa-github'></a>&nbsp
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
+					<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">MEAN HDTV Store</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>MEAN HDTV Store</strong> is a virtual Ecommerce store dashboard allowing an administrator of a store to track new customers, orders, and product inventory.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>MongoDB |</li>
+											<li>ExpressJS |</li>
+											<li>AngularJS |</li>
+											<li>NodeJS |</li>
+											<li>Twitter Bootstrap</li>
+										</ul>
+										<a href="http://ec2-54-187-173-167.us-west-2.compute.amazonaws.com" target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img src="images/thumbs/meanstore/meanstore1.png" />
+													<img src="images/thumbs/meanstore/meanstore2.png" />
+													<img src="images/thumbs/meanstore/meanstore3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+			      					<a class='button-sm' target="blank" href='http://ec2-54-201-107-195.us-west-2.compute.amazonaws.com'>Visit</a>&nbsp
+										<a href='https://github.com/Eric-Tran/MEANStore' target="blank" class='icon fa-github'></a>&nbsp
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
+					<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">The Great Discussion Board</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>The Great Discussion Board</strong> is a message board that allows users to post topics, comment on topics, and view another other members profile and their topic, post, and comment contribution.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>MongoDB |</li>
+											<li>ExpressJS |</li>
+											<li>AngularJS |</li>
+											<li>NodeJS |</li>
+											<li>Twitter Bootstrap</li>
+										</ul>
+										<a href=http://ec2-54-191-236-193.us-west-2.compute.amazonaws.com target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img src="images/thumbs/discussion/discussion1.png" />
+													<img src="images/thumbs/discussion/discussion2.png" />
+													<img src="images/thumbs/discussion/discussion3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+			      					<a class='button-sm' target="blank" href='http://ec2-54-191-236-193.us-west-2.compute.amazonaws.com'>Visit</a>&nbsp
+										<a href='https://github.com/Eric-Tran/radiofind' target="blank" class='icon fa-github'></a>&nbsp
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
+					<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">Speaking Notes</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>Speaking Notes</strong> was a group project I enjoyed working on and was the winner of an on-site school hackathon. This application allows a user to take a photo of text, then it extracts the text and saves it into a table of notes, and also speaks the note back to the user when clicked.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>iOS Swift |</li>
+											<li>iOS SpeechKit |</li>
+											<li>iOS AVFoundation |</li>
+											<li>Google Tessaract OCR Character Recognition Library</li>
+										</ul>
+										<a href="https://github.com/Eric-Tran/Speaking-Notes" target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img class="panel-img1" src="images/thumbs/speakingnotes/notes1.png" />
+													<img class="panel-img1" src="images/thumbs/speakingnotes/notes2.png" />
+													<img class="panel-img2" src="images/thumbs/speakingnotes/notes3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+											<a href="https://github.com/Eric-Tran/Speaking-Notes" target="blank" class='icon fa-github'></a>
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
+					<div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  						<div class="modal-dialog modal-wide" role="document">
+	    					<div class="modal-content">
+		      				<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		       					 <h4 class="modal-title" id="myModalLabel">Ball Travellers</h4>
+		      				</div>
+		     					 <div class="modal-body">
+		        					<p><strong>Ball Travellers</strong> is my first group project written in Python. This application aims to simplify the process of going to a user's favorite NBA team game by providing all the resources the need. Uses an NBA schedule API as well as Google Maps API to get a user directions to a selected NBA game.</p>
+									<p class="btm-spacing"><strong>Technologies:</strong></p>
+										<ul class="technology_list">
+											<li>Python |</li>
+											<li>Flask |</li>
+											<li>AJAX |</li>
+											<li>Pylot (lightweight framework for Flask) |</li>
+											<li>MySQL |</li>
+											<li>Google Maps API |</li>	
+											<li>NBA Schedule API</li>									
+										</ul>
+										<a href="https://github.com/jnguyen10/ball_traveller" target="blank">
+											<div class="panel panel-default">
+												<div class='panel-body'>
+													<img src="images/thumbs/balltravellers/ball1.png" />
+													<img src="images/thumbs/balltravellers/ball2.png" />
+													<img src="images/thumbs/balltravellers/ball3.png" />
+												</div>
+											</div>
+										</a>
+		      					</div>
+		      					<div class="modal-footer">
+			      					<div style="text-align: center">
+											<a href="https://github.com/jnguyen10/ball_traveller" target="blank" class='icon fa-github'></a>
+										</div>
+						      </div>
+							</div>
+  						</div>
+					</div>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>

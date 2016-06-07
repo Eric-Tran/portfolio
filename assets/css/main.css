@@ -13,8 +13,36 @@
 	}
 
 	/* Custom CSS */
+	.btm-spacing {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
 	.img_logos {
 		margin-right: 10px;
+	}
+	.modal-content {
+		margin-top: 5%;
+	}
+	.modal-wide {
+		width: 90%;
+	}
+	.panel {
+		margin: 20px 0px 0px 0px;
+	}
+	.panel-img1 {
+		margin-right: 10%;
+		border: 1px solid #ccc;
+	}
+	.panel-img2 {
+		border: 1px solid #ccc;
+	}
+	.technology_list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.technology_list li {
+		display: inline;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2279,9 +2307,9 @@
 		padding: 2em;
 	}
 
-		.box.style2 {
+		/*.box.style2 {
 			padding: 3.5em 2.5em 3.5em 2.5em;
-		}
+		}*/
 
 /* Main */
 
