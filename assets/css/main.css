@@ -44,7 +44,15 @@
 	.technology_list li {
 		display: inline;
 	}
-
+	.panel-body img {
+		width:33%;
+	}
+	@media screen and (max-width: 800px) and (min-width: 360px) {
+    .panel-body img {
+        width:100%;
+        height: auto;
+    }
+}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
