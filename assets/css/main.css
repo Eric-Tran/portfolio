@@ -20,6 +20,9 @@
 	.img_logos {
 		margin-right: 10px;
 	}
+	.note-img {
+		width: 12% !important;
+	}
 	.modal-content {
 		margin-top: 5%;
 	}
